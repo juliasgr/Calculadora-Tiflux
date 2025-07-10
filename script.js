@@ -1,4 +1,4 @@
-function mostraDisplay(value) {
+function visor(value) {
     const display = document.getElementById('display');
 
     if (display.value === '0' || display.value === 'Erro') {
@@ -15,8 +15,15 @@ function limpar() {
 
 function calcular() {
     const display = document.getElementById('display');
+    const expressao = display.value;
+
+    if (expressao.includes('/0') || expressao.includes('%0')) {
+        display.value = 'Não é possível dividir por zero.';
+        return;
+    }
+
     try {
-        const resultado = eval(display.value);
+        const resultado = eval(expressao);
         display.value = resultado;
     } catch (error) {
         display.value = 'Erro';
