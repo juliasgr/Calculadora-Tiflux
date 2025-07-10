@@ -1,4 +1,4 @@
-function appendToDisplay(value) {
+function mostraDisplay(value) {
     const display = document.getElementById('display');
 
     if (display.value === '0' || display.value === 'Erro') {
@@ -22,4 +22,3 @@ function calcular() {
         display.value = 'Erro';
     }
 }// Faz o cálculo, obs. eval faz o trabalho de fazer todos os cálculos de forma bem simples, caso contrário seria necessário muito mais linhas de código e vários if e else
-

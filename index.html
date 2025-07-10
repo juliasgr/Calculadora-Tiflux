@@ -2,44 +2,44 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Calculadora Tiflux</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora Tiflux</title>
 </head>
 
 <body>
-  <div class="calculadora">
-    <input type="text" id="display" value="0" disabled /> <!--disabled pois impede que o usuário digite diretamente no display da calculadora-->
+    <div class="calculadora">
+        <input type="text" id="display" value="0" disabled />
+        <!--disabled pois impede que o usuário digite diretamente no display da calculadora-->
 
-    <button onclick="limpar()">C</button>
-    <button onclick="appendToDisplay('%')" class="operador">%</button>
-    <button onclick="appendToDisplay('/')" class="operador">/</button>
-    <button onclick="appendToDisplay('*')" class="operador">×</button>
+        <button onclick="limpar()">C</button>
+        <button onclick="mostraDisplay('%')" class="operador">%</button>
+        <button onclick="mostraDisplay('/')" class="operador">/</button>
+        <button onclick="mostraDisplay('*')" class="operador">×</button>
 
-    <button onclick="appendToDisplay('7')">7</button>
-    <button onclick="appendToDisplay('8')">8</button>
-    <button onclick="appendToDisplay('9')">9</button>
-    <button onclick="appendToDisplay('-')" class="operador">-</button>
+        <button onclick="mostraDisplay('7')">7</button>
+        <button onclick="mostraDisplay('8')">8</button>
+        <button onclick="mostraDisplay('9')">9</button>
+        <button onclick="mostraDisplay('-')" class="operador">-</button>
 
-    <button onclick="appendToDisplay('4')">4</button>
-    <button onclick="appendToDisplay('5')">5</button>
-    <button onclick="appendToDisplay('6')">6</button>
-    <button onclick="appendToDisplay('+')" class="operador">+</button>
+        <button onclick="mostraDisplay('4')">4</button>
+        <button onclick="mostraDisplay('5')">5</button>
+        <button onclick="mostraDisplay('6')">6</button>
+        <button onclick="mostraDisplay('+')" class="operador">+</button>
 
-    <button onclick="appendToDisplay('1')">1</button>
-    <button onclick="appendToDisplay('2')">2</button>
-    <button onclick="appendToDisplay('3')">3</button>
-    <button onclick="calcular()" class="operador">=</button>
+        <button onclick="mostraDisplay('1')">1</button>
+        <button onclick="mostraDisplay('2')">2</button>
+        <button onclick="mostraDisplay('3')">3</button>
+        <button onclick="calcular()" class="operador">=</button>
 
-    <button onclick="appendToDisplay('0')" class="numero zero">0</button>
-    <button onclick="appendToDisplay('.')">.</button>
-    <button id="tiflux">
-      <img src="img/tifluxlogo.png" alt="Tiflux logo" />
-    </button>
-  </div>
-
-  <script src="script.js"></script>
+        <button onclick="mostraDisplay('0')" class="numero zero">0</button>
+        <button onclick="mostraDisplay('.')">.</button>
+        <button id="tiflux">
+            <img src="img/tifluxlogo.png" alt="Tiflux logo" />
+        </button>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

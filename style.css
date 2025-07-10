@@ -56,7 +56,8 @@ button#tiflux {
 
 button#tiflux img {
     width: 30px;
-    height: 20px; /*a imagem da logo da tiflux eu peguei e tirei o fundo mas ela ficou mais comprida horizontalmente então coloquei width maior que height*/
+    height: 20px;
+    /*a imagem da logo da tiflux eu peguei e tirei o fundo mas ela ficou mais comprida horizontalmente então coloquei width maior que height*/
 }
 
 .zero {
